@@ -8,10 +8,9 @@ const Index = (props) => {
     
     <div className="cheeses-container">
         {cheeses.map(cheese => (
-            <Link to={cheese._id}>
+            <Link to={cheese._id} key={cheese._id}>
                 <h2>{cheese.name}</h2>
             </Link>
-            
         ))}
     </div>
     </>)

@@ -5,3 +5,10 @@ export const cheesesLoader = async () => {
     const cheeses = await response.json()
     return cheeses
 }
+
+export const cheeseLoader = async ({params}) => {
+    const response = await fetch(URL + `/cheeses/${params.id}`)
+    const cheese = await response.json()
+    console.log(cheese)
+    return cheese
+}

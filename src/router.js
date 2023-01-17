@@ -9,6 +9,7 @@ import Index from './pages/Index'
 import Show from './pages/Show'
 import { cheesesLoader } from './loaders'
 import { cheeseLoader } from './loaders'
+import { createAction } from './actions'
 
 // Create router
 const router = createBrowserRouter(
@@ -22,8 +23,8 @@ const router = createBrowserRouter(
                 path="cheeses/:id"
                 loader={cheeseLoader}
                 element={<Show/>}/>
-            {/* <Route path="create" action={}/>
-            <Route path="update/:id" action={}/>
+            <Route path="create" action={createAction}/>
+            {/* <Route path="update/:id" action={}/>
             <Route path="delete/:id" action={}/> */}
         </Route>
     )

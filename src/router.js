@@ -2,7 +2,7 @@
 import {
     createBrowserRouter,
     createRoutesFromElements,
-    Router
+    Route
 } from 'react-router-dom'
 import App from './App'
 

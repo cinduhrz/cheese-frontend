@@ -7,12 +7,16 @@ import {
 import App from './App'
 import Index from './pages/Index'
 import Show from './pages/Show'
+import { cheesesLoader } from './loaders'
 
 // Create router
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App/>}>
-            <Route path="cheeses" element={<Index/>}/>
+            <Route 
+                path="cheeses"
+                loader={cheesesLoader}
+                element={<Index/>}/>
             <Route path="cheeses/:id" element={<Show/>}/>
             {/* <Route path="create" action={}/>
             <Route path="update/:id" action={}/>

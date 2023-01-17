@@ -21,6 +21,7 @@ body {
 .nav {
   @include cheese-bg-black-text();
   padding: 10px;
+  font-size: 2rem;
 
   a {
     color: black;
@@ -31,4 +32,3 @@ body {
     }
   }
 }
-
